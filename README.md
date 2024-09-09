@@ -1,1 +1,3 @@
-This is repogitory of studying Web Programming
+Study Web Programming
+1. Week1
+2. Week2
