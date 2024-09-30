@@ -10,7 +10,7 @@
       let parent = obj.parentElement; // parent = obj의 부모
       let newP = document.createElement("p"); //p객체 생성
       newP.innerHTML = text;
-      newP.setAttribute("id", "myP"); //삭제 위해 필요
+      newP.setAttribute("id", "answer"); // id 속성 추가
       parent.appendChild(newP); // 마지막 자식 뒤에 추가
 
       // 삭제 기능
