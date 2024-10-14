@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let time;
+    let clock;
+    let clockID;
+    function startClock() {
+      clock = document.getElementById('clock');
+      time = new Date();
+      showTime();
+      clockID = setInterval("showTime()", 1000);
+    }
+
+    function showTime() {
+      time = new Date();
+      clock.innerHTML = time.toLocaleTimeString();
+    }
+
+    // mine
+    let i = 0;
+    function stop_start_clock() {
+      if (i % 2 == 0) {
+        clearInterval(clockID);
+        i++;
+      }
+      else {
+        startClock();
+        i++;
+      }
+    }
+
+    // 교수님 버전
+    function stop_start_clock2() {
+      if (clockID) {
+        clearInterval(clockID);
+        clockID = null;
+        clock.style.color = 'gray';
+      }
+      else if (clockID == null) {
+        clockID = setInterval('showTime()', 1000);
+        clock.style.color = 'black';
+      }
+    }
+  </script>
+</head>
+
+<body onload="startClock()">
+  <h2>div 태그에 시계 만들기</h2>
+  <hr>
+  <div id="clock" onclick="stop_start_clock2();">
+  </div>
+
+</body>
+
+</html>
