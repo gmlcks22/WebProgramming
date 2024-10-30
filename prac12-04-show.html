@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      background-color: aliceblue;
+      border-collapse: collapse;
+    }
+
+    table th,
+    td {
+      border-bottom: 1px solid gray;
+      padding: 5px;
+    }
+  </style>
+  <script>
+    function clearall() {
+      localStorage.clear();
+    }
+  </script>
+</head>
+
+<body>
+  <h3>일기 보기</h3>
+  <hr>
+  <table id="diaryTable">
+
+  </table>
+  <br>
+  <button id="clearall" onclick="clearall()">일기 삭제</button>
+  <script>
+    let diaryTable = document.getElementById("diaryTable");
+    let j = 1;
+    for (let i = 0; i < localStorage.length; i += 2) {
+      let time = localStorage.getItem(i); //time
+      let text = localStorage.getItem(i + 1); //value
+      let newRow = document.createElement("tr"); // table 열 생성
+      newRow.innerHTML = "<td>" + "<p style='border: 1.5px dotted rgb(39, 159, 39)'>" + (j) + "</p>" + "</td>" +
+        "<th>" + time + "</th>" +
+        "<td>" + text + "</td>";
+
+      diaryTable.appendChild(newRow);
+      j++;
+    }
+  </script>
+</body>
+
+</html>

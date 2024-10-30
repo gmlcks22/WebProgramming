@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 현재 시각 변수 선언
+    let now = new Date();
+  </script>
+</head>
+
+<body>
+  <h3>일기쓰기</h3>
+  <hr>
+  <script>
+    document.write("오늘 " + now.getFullYear() + "." +
+      (now.getMonth() + 1) + "." +
+      now.getDate());
+  </script>
+  <br>
+  <textarea id="textarea" style="width:500px; height:300px;"></textarea>
+  <br>
+  <button id="save" onclick="store()">저장</button>
+  <button id="look" onclick="openDiary()">보기</button>
+
+  <script>
+    // 저장 버튼
+    let i = 0;
+    function store() {
+      if (!window.localStorage) {
+        alert("로컬스토리지를 지원하지 않습니다.");
+        return;
+      }
+      let textarea = document.getElementById("textarea");
+
+      //local storage에 (현재 시간(날짜), 일기) 저장
+      localStorage.setItem(i,
+        now.getFullYear() + "." +
+        (now.getMonth() + 1) + "." +
+        now.getDate());
+      localStorage.setItem(i + 1, textarea.value);
+      i += 2;
+    }
+
+    // 열기 버튼
+    function openDiary() {
+      window.open('prac12-04-show.html', '_blank');
+    }
+  </script>
+</body>
+
+</html>
