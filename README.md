@@ -36,3 +36,31 @@
       - border, border-(collapse, color)
 ---
 4. Week 4: JavaScript
+   - JavaScript
+   - 코어 객체, 사용자 객체 만들기
+---
+5. Week 5: HTML DOM(Document Object Model)
+   - DOM
+   - document.getElement(s)By...
+   - appendChild...
+---
+6. Week 6: Event
+   - Event
+   - EventListener()
+   - onclick etc
+   - onload
+---
+7. Week 7: BOM, Canvas graphic
+   - BOM
+      - window.open...
+      - setTimeout
+      - setInterval
+   - Canvas Graphic
+      - stroke()
+---
+8. Mid-term Exam
+---
+9. Cookie, Web Storage
+   - cookie
+   - session storage
+   - local storage
