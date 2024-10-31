@@ -1,7 +1,7 @@
 # Web Programming
 
-##1. Week 1
-   ###<week1.html>
+## 1. Week 1
+   ### <week1.html>
    - 강의 개요
    - 웹의 개념과 구조
    - VS Code
