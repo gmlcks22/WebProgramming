@@ -1,5 +1,7 @@
 # 🌐 Web Programming Course  
 
+이 저장소는 **웹 프로그래밍** 강의의 학습 자료와 실습 코드를 정리한 곳입니다. 주차별 내용 요약과 관련 파일 링크를 포함하고 있습니다.
+
 ---
 
 ## 📅 목차
@@ -11,7 +13,10 @@
 6. [Week 6: Event](#week-6-event)  
 7. [Week 7: BOM, Canvas Graphic](#week-7-bom-canvas-graphic)  
 8. [Mid-term Exam](#mid-term-exam)  
-9. [Cookie, Web Storage](#cookie-web-storage)  
+9. [Cookie, Web Storage](#Week-9-cookie-web-storage)  
+10. [Week 10: 오디오, 비디오 제어, 웹워커](#week-10-오디오-비디오-제어-웹워커)  
+11. [Week 11: 고급 자바스크립트 1](#week-11-고급-자바스크립트-1)  
+12. [Week 12: 고급 자바스크립트 2](#week-12-고급-자바스크립트-2)  
 
 ---
 
@@ -100,10 +105,36 @@
 
 ---
 
-## 9. Cookie, Web Storage  
+## Week 9: Cookie, Web Storage  
 ### 🔗 [`prac12-04.html`](./prac12-04.html), [`prac12-04-show.html`](./prac12-04-show.html)  
 - **Cookie**  
 - **Session Storage**  
 - **Local Storage**  
+
+---
+
+## Week 10: 오디오, 비디오 제어, 웹워커  
+### 🔗 [`multiply.js`](./multiply.js)  
+- **오디오, 비디오 제어 방법**  
+- **웹워커**  
+  - 정의 및 동작 방식  
+- **실습**  
+  - 오디오/비디오 제어기 생성  
+  - 웹워커 생성 및 통신  
+
+---
+
+## Week 11: 고급 자바스크립트 1  
+- **데이터 타입**  
+- **ES6**  
+- **Hoisting, var, let, const**  
+
+---
+
+## Week 12: 고급 자바스크립트 2  
+### 🔗 [`functionPr-practice.js`](./functionPr-practice.js)  
+- **Scope와 Closure**  
+- **JavaScript 함수의 활용**  
+- **Functional Programming**  
 
 ---
