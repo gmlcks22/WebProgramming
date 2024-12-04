@@ -130,9 +130,12 @@
 ---
 
 ## Week 12: 고급 자바스크립트 2  
-### 🔗 [`functionPr-practice.js`](./functionPr-practice.js)  
+### 🔗 [`functionPr-practice.js`](./funcPr-practice.js)  
 - **Scope와 Closure**  
 - **JavaScript 함수의 활용**  
 - **Functional Programming**  
 
 ---
+
+## Week 13: Node.js
+[Week 13 practice](./practice)
