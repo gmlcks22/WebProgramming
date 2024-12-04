@@ -153,10 +153,10 @@ practice 11-18: [`functionPr-practice.js`](./funcPr-practice.js)
 [First-Class 예제3](./examples/first-class-function3.js)  
 [Callback 예제1](./examples/callback-function1-week12.js)  
 [Callback 예제2](./examples/callback-function2-week12.js)  
-[higher order 예제1](./examples/higher-order%20function1%20week12.js)  
-  `push()`: 배열에 요소 추가  
-  `map()`: 새로운 배열 반환  
-[higher order 예제2](./examples/)  
+[higher order 예제1](./examples/higher-order%20function1%20week12.js): `push()`: 배열에 요소 추가, `map()`: 새로운 배열 반환  
+[higher order 예제2](./examples/higher-order%20function2%20week12.js)  
+[composition func 예제](./examples/week12-compositiion.js):
+_함수를 작게 나누어서 구성 => 합성하여 함수 구성_ 
 
 - **Scope와 Closure**  
 - **JavaScript 함수의 활용**  
