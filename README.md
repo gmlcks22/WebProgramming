@@ -19,7 +19,7 @@
 ---
 
 ## Week 1: 웹 프로그래밍 개요  
-### 🔗 [`week1.html`](./week1.html)  
+[`week1.html`](./week1.html)  
 - **강의 개요**  
 - 웹의 개념과 구조  
 - **VS Code**  
@@ -36,7 +36,7 @@
 ---
 
 ## Week 2: HTML Review  
-### 🔗 [`week2.html`](./week2.html)  
+[`week2.html`](./week2.html)  
 - **HTML Input Types**  
   - Check Box  
   - Radio Button  
@@ -46,7 +46,7 @@
 ---
 
 ## Week 3: CSS Review  
-### 🔗 [`week3.html`](./week3.html)  
+[`week3.html`](./week3.html)  
 - **Selectors**  
   - 태그 이름, `.class` & `class=""`, `#id` & `id=""`  
   - 가상 클래스: `:visited`, `:hover`, `*` (전체 선택자)  
@@ -65,14 +65,17 @@
 ---
 
 ## Week 4: JavaScript  
-### 🔗 [`obj-gen.html`](./obj-gen.html)  
+[`obj-gen.html`](./obj-gen.html)
+[`연습문제6-1`](./prac6-01.html)
+[`연습문제6-2`](./prac6-03.html)
+[`연습문제6-3`](./prac6-03.html)
 - JavaScript 개요  
 - 코어 객체와 사용자 객체 생성  
 
 ---
 
 ## Week 5: HTML DOM(Document Object Model)  
-### 🔗 [`prac8-10.html`](./prac8-10.html)  
+[`prac8-10.html`](./prac8-10.html)  
 - DOM 활용  
 - `document.getElement(s)By...`  
 - `appendChild...`  
@@ -80,7 +83,8 @@
 ---
 
 ## Week 6: Event  
-### 🔗 [`practice9-6.html`](./practice9-6.html), [`practice9-10.html`](./practice9-10.html)  
+[`practice9-6.html`](./practice9-6.html)
+[`practice9-10.html`](./practice9-10.html)  
 - 이벤트 처리  
   - `EventListener()`  
   - `onclick`  
@@ -89,7 +93,7 @@
 ---
 
 ## Week 7: BOM, Canvas Graphic  
-### 🔗 [`practice10-05&06.html`](./practice10-05&06.html)  
+[`practice10-05&06.html`](./practice10-05&06.html)  
 - **BOM (Browser Object Model)**  
   - `window.open...`  
   - `setTimeout`, `setInterval`  
@@ -104,7 +108,8 @@
 ---
 
 ## Week 9: Cookie, Web Storage  
-### 🔗 [`prac12-04.html`](./prac12-04.html), [`prac12-04-show.html`](./prac12-04-show.html)  
+[`prac12-04.html`](./prac12-04.html)
+[`prac12-04-show.html`](./prac12-04-show.html)  
 - **Cookie**  
 - **Session Storage**  
 - **Local Storage**  
@@ -112,7 +117,7 @@
 ---
 
 ## Week 10: 오디오, 비디오 제어, 웹워커  
-### 🔗 [`multiply.js`](./multiply.js)  
+[`multiply.js`](./multiply.js)  
 - **오디오, 비디오 제어 방법**  
 - **웹워커**  
   - 정의 및 동작 방식  
@@ -123,6 +128,14 @@
 ---
 
 ## Week 11: 고급 자바스크립트 1  
+[`forEach 예제'](./examples/forEach.js)
+[`arrow function 예제1`](./examples/arrow-function.js)
+[`arrow function 예제2`](./examples/arrow-function2.js)
+[`first class function 예제1`](./examples/first-class-function1.js)
+[`first class function 예제2`](./examples/first-class-function2.js)
+[`first class function 예제3`](./examples/first-class-function3.js)
+[Callback 예제](./examples/callback-function.js)
+
 - **데이터 타입**  
 - **ES6**  
 - **Hoisting, var, let, const**  
@@ -130,7 +143,21 @@
 ---
 
 ## Week 12: 고급 자바스크립트 2  
-### 🔗 [`functionPr-practice.js`](./funcPr-practice.js)  
+practice 11-18: [`functionPr-practice.js`](./funcPr-practice.js) 
+[Parameters 예제1](./examples/parameters1.js) 
+[Parameters 예제2](./examples/parameters2.js) 
+[Parameters 예제3](./examples/parameters3.js) 
+[scope 예제](./examples/scope.js)
+[First-Class 예제1](./examples/first-class-function1.js)
+[First-Class 예제2](./examples/first-class-function2.js)
+[First-Class 예제3](./examples/first-class-function3.js)
+[Callback 예제1](./examples/callback-function1-week12.js)
+[Callback 예제2](./examples/callback-function2-week12.js)
+[higher order 예제1](./examples/higher-order%20function1%20week12.js)
+  push(): 배열에 요소 추가
+  map(): 새로운 배열 반환
+[higher order 예제2](./examples/)
+
 - **Scope와 Closure**  
 - **JavaScript 함수의 활용**  
 - **Functional Programming**  
