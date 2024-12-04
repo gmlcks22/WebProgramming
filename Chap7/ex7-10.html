@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let account = {
+      owner: "Hwang",
+      code: "111",
+      balance: 35000,
+
+      inquiry: function () { return this.balance; },
+      deposit: function (money) { return this.balance += money; },
+      withdraw: function (money) {
+        this.balance -= money;
+        return money;
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <h3>new Object()로 사용자 객체 만들기</h3>
+  <hr>
+  <script>
+    document.write("account : ");
+    document.write(account.owner + ", ");
+    document.write(account.code + ", ");
+    document.write(account.balance + "<br>");
+
+    account.deposit(10000);
+    document.writeln(account.inquiry());
+    account.withdraw(5000);
+    document.write(account.inquiry());
+
+  </script>
+</body>
+
+</html>

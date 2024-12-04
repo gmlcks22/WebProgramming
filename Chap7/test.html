@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function f() {
+      document.write("print something");
+    }
+    let account = new Object();
+    account.name = "me"
+    account.f = f;
+  </script>
+
+  <script>
+    let account2 = {
+      name: "me",
+      f: function () {
+        document.write("print somethins");
+      }
+    };
+  </script>
+
+  <script>
+    function account3(name) {
+      this.name = "me";
+      this.f = function () { document.write("print somethinsg") };
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+    let me = new 
+  </script>
+</body>
+
+</html>

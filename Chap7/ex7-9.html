@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function inquiry() {
+      return this.balance;
+    }
+    function deposit(money) {
+      this.balance += money;
+    }
+    function withdraw(money) {
+      this.balance -= money;
+      return money;
+
+    }
+    let account = new Object();
+    account.owner = "Hwang";
+    account.code = "111";
+    account.balance = 35000;
+    account.inquiry = inquiry;
+    account.deposit = deposit;
+    account.withdraw = withdraw;
+  </script>
+</head>
+
+<body>
+  <h3>new Object()로 사용자 객체 만들기</h3>
+  <hr>
+  <script>
+    document.write("account : ");
+    document.write(account.owner + ", ");
+    document.write(account.code + ", ");
+    document.write(account.balance + "<br>");
+
+    account.deposit(10000);
+    document.writeln(account.inquiry());
+    account.withdraw(5000);
+    document.write(account.inquiry());
+
+  </script>
+</body>
+
+</html>
