@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function isSame(num) {
+      let firstNum = num;
+      while (true) {
+        firstNum = Math.floor(firstNum / 10);
+        if (firstNum < 10) {
+          break;
+        }
+      }
+      let lastNum = 0;
+      lastNum = Math.floor(num / 10) * 10;
+      lastNum = num - lastNum;
+
+      if (firstNum == lastNum) {
+        document.write(num + ": 같음");
+      }
+      else{
+        document.write("ekfma");
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+    let num = prompt("숫자 입력");
+    isSame(num);
+  </script>
+</body>
+
+</html>

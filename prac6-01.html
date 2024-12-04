@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function over() {
+      let div = document.getElementById("div");
+      div.style.background = "yellow";
+    }
+    function out() {
+      let div = document.getElementById("div");
+      div.style.background = "white";
+    }
+  </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>마우스를 올려 보세요</h3>
+  <hr>
+  <div id="div" onmouseover="over()" onmouseout="out()">put a mouse on it</div>
+</body>
+
+</html>
