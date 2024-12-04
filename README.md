@@ -128,13 +128,13 @@
 ---
 
 ## Week 11: 고급 자바스크립트 1  
-[`forEach 예제'](./examples/forEach.js)
-[`arrow function 예제1`](./examples/arrow-function.js)
-[`arrow function 예제2`](./examples/arrow-function2.js)
-[`first class function 예제1`](./examples/first-class-function1.js)
-[`first class function 예제2`](./examples/first-class-function2.js)
-[`first class function 예제3`](./examples/first-class-function3.js)
-[Callback 예제](./examples/callback-function.js)
+[forEach 예제](./examples/forEach.js)  
+[arrow function 예제1](./examples/arrow-function.js)  
+[arrow function 예제2](./examples/arrow-function2.js)  
+[first class function 예제1](./examples/first-class-function1.js)  
+[first class function 예제2](./examples/first-class-function2.js)  
+[first class function 예제3](./examples/first-class-function3.js)  
+[Callback 예제](./examples/callback-function.js)  
 
 - **데이터 타입**  
 - **ES6**  
@@ -143,20 +143,20 @@
 ---
 
 ## Week 12: 고급 자바스크립트 2  
-practice 11-18: [`functionPr-practice.js`](./funcPr-practice.js) 
-[Parameters 예제1](./examples/parameters1.js) 
-[Parameters 예제2](./examples/parameters2.js) 
-[Parameters 예제3](./examples/parameters3.js) 
-[scope 예제](./examples/scope.js)
-[First-Class 예제1](./examples/first-class-function1.js)
-[First-Class 예제2](./examples/first-class-function2.js)
-[First-Class 예제3](./examples/first-class-function3.js)
-[Callback 예제1](./examples/callback-function1-week12.js)
-[Callback 예제2](./examples/callback-function2-week12.js)
-[higher order 예제1](./examples/higher-order%20function1%20week12.js)
-  push(): 배열에 요소 추가
-  map(): 새로운 배열 반환
-[higher order 예제2](./examples/)
+practice 11-18: [`functionPr-practice.js`](./funcPr-practice.js)  
+[Parameters 예제1](./examples/parameters1.js)   
+[Parameters 예제2](./examples/parameters2.js)   
+[Parameters 예제3](./examples/parameters3.js)   
+[scope 예제](./examples/scope.js)  
+[First-Class 예제1](./examples/first-class-function1.js)  
+[First-Class 예제2](./examples/first-class-function2.js)  
+[First-Class 예제3](./examples/first-class-function3.js)  
+[Callback 예제1](./examples/callback-function1-week12.js)  
+[Callback 예제2](./examples/callback-function2-week12.js)  
+[higher order 예제1](./examples/higher-order%20function1%20week12.js)  
+  `push()`: 배열에 요소 추가  
+  `map()`: 새로운 배열 반환  
+[higher order 예제2](./examples/)  
 
 - **Scope와 Closure**  
 - **JavaScript 함수의 활용**  
