@@ -1,0 +1,1 @@
+const students=[{name:'ksd', age:31, score:85}, {name:'kjh', age:13}]
