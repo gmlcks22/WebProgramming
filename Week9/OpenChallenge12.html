@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>단어장 만들기</title>
+  <script>
+    function save() {
+      let eng = document.getElementById("eng");
+      let kor = document.getElementById("kor");
+      let engCash = localStorage.getItem(eng.value);
+      if (eng.value != null) {
+        let edit = confirm(`${eng.value}가 이미 있습니다. 수정하시겠습니까?`);
+        if (edit == true) {
+          localStorage.setItem(eng.value, kor.value);
+        }
+        else {
+          return;
+        }
+      }
+      else {
+        localStorage.setItem(eng.value, kor.value);
+      }
+    }
+
+    function search() {
+      let eng = document.getElementById("eng");
+      if (eng == null) {
+        alert(`${eng}는 없는 단어입니다.`);
+      }
+      else {
+        let answer = localStorage.getItem(eng.value);
+        let kor = document.getElementById("kor");
+        kor.value = answer;
+      }
+    }
+    function del() {
+      let eng = document.getElementById("eng");
+      let confirmDel
+      if (eng.value.trim() != "") {
+        confirmDel = confirm(`${eng.value}를 삭제하시겠습니까?`);
+      }
+      if (confirmDel) {
+        sessionStorage.removeItem(eng.value);
+        alert(`${eng.value}가 삭제되었습니다`);
+      }
+    }
+    function seeAll() {
+      let allWords = "";
+      for (let i = 0; i < localStorage.length; i++) {
+        let key = localStorage.key(i);
+        let value = localStorage.getItem(key);
+        allWords += `${key}: ${value}\n`;
+      }
+      alert(allWords);
+    }
+  </script>
+</head>
+
+<body>
+  <h2>나의 단어장 만들기</h2>
+  <hr>
+  영어 <input type="text" id="eng"><br>
+  한글 <input type="text" id="kor"><br><br>
+  <input type="button" value="단어 저장" onclick="save()">
+  <input type="button" value="영단어 검색" onclick="search()">
+  <input type="button" value="단어 삭제" onclick="del()">
+  <input type="button" value="전체 보기" onclick="seeAll()">
+</body>
+
+</html>
