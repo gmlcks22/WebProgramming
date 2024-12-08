@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex 8-10</title>
+  <script>
+    let win = null;
+    function showHTML() {
+      if (win == null || win.closed) {
+        win = window.open("", "outWin", "width=500, height=300");
+
+        let textArea = document.getElementById('srcText');
+        win.document.open();
+        win.document.write(textArea.value);
+        win.document.close();
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h3>HTML 문서 작성기 만들기</h3>
+  <hr>
+  <p>
+    아래에 HTML 문서를 작성하고 버튼을 클릭해 보세요. <br>
+    새 윈도우에 HTML 문서가 출력됩니다.
+  </p>
+  <textarea name="" id="srcText" rows="10" cols="50"></textarea>
+  <br>
+  <br>
+  <button onclick="showHTML();">HTML 문서 출력하기</button>
+  <br> <br>
+  <!-- <input type="button" name="" id="" value="HTML 문서 출력하기"> -->
+</body>
+
+</html>

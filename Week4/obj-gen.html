@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 직접 객체 만들기
+    function register() { this.nStudent += 1; }
+    function unregister() { this.nStudent -= 1; }
+    function getStudentCount() { return this.nStudent; }
+
+    let webProgramming = new Object();
+    webProgramming.korName = "웹프로그래밍";
+    webProgramming.engName = "WebProgramming";
+    webProgramming.classCode = "V0024003";
+    webProgramming.nStudent = 0;
+    webProgramming.getStudentCount = this.getStudentCount;
+    webProgramming.register = this.register;
+
+    // 리터럴 표기법
+    let cloudComputing = {
+      korName: "클라우드컴퓨팅",
+      engName: "CloudComputing",
+      classCode: "V0024004",
+      nStudent: 0,
+
+      register: function () { this.nStudent += 1; },
+      unregister: function () { this.nStudent -= 1; },
+      getStudentCount: function () { return this.nStudent; }
+    };
+
+    //프로토타입
+    function ProgrammingLanguage() {
+      this.korName = "프로그래밍 언어론";
+      this.engName = "Programming Language";
+      this.classCode = "V0024004";
+      this.nStudent = 0;
+
+      this.register = function () { this.nStudent += 1; }
+      this.unregister = function () { this.nStudent -= 1; }
+      this.getStudentCount = function () { return this.nStudent; }
+    }
+  </script>
+</head>
+
+<body>
+  <h2>1. 직접 객체 만들기</h2>
+  <script>
+    document.write("교과목 이름 = " + webProgramming.korName + "<br>");
+    document.write("등록 학생 수 = " + webProgramming.nStudent + "<br>");
+    webProgramming.register();
+    document.write("after register, 등록 학생 수 = " + webProgramming.getStudentCount());
+  </script>
+  <hr>
+  <h2>2. 리터럴 표기법</h2>
+  <script>
+    document.write("교과목 이름 = " + cloudComputing.korName + "<br>");
+    document.write("등록 학생 수 = " + cloudComputing.nStudent + "<br>");
+    cloudComputing.register();
+    document.write("after register, 등록 학생 수 = " + cloudComputing.getStudentCount());
+  </script>
+  <hr>
+  <h2>3. Prototype</h2>
+  <script>
+    let programmingLanguage = new ProgrammingLanguage();
+    document.write("교과목 이름 = " + programmingLanguage.korName + "<br>");
+    document.write("등록 학생 수 = " + programmingLanguage.nStudent + "<br>");
+    programmingLanguage.register();
+    document.write("after register, 등록 학생 수 = " + programmingLanguage.getStudentCount());
+  </script>
+</body>
+
+</html>

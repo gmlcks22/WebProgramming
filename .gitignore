@@ -1,7 +1,8 @@
 *.pdf
-*.html
 *.mp4
 *.mp3
 *.jpg
 *.png
 *.pptx
+node_modules/
+*.json

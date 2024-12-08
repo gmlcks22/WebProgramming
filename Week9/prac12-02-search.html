@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function search() {
+      let item = document.getElementById("item");
+      let value = sessionStorage.getItem(item.value);
+      if (value == null) {
+        alert(item.value + "는 없습니다");
+      }
+      else {
+        count.value = value;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h2>세션 스토리지에 구입 리스트 검색</h2>
+  <hr>
+  품목명: <input type="text" id="item">
+  개수: <input type="text" id="count">
+  <br>
+  <input type="button" value="검색" onclick="search()">
+</body>
+
+</html>

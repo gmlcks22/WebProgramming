@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div style="display: grid; 
+  grid-template-columns: 100px 100px;">
+    <div style="background-color: aliceblue;">Item 1</div>
+    <div style="background-color: yellow;">Item 2</div>
+    <div style="background-color: lightpink;">Item 3</div>
+    <div style="background-color: beige;">Item 4</div>
+  </div>
+
+  <br><br><hr><br><br>
+
+  <div style="display: grid; 
+  grid-template-areas: 'header header' 'sidebar content' 'footer footer';
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: auto 1fr auto;"> <!--header header가 auto, -->
+    <div style="grid-area: header; background-color: aliceblue;">Item 1</div>
+    <div style="grid-area: sidebar; background-color: yellow;">Item 2</div>
+    <div style="grid-area: content; background-color: lightpink;">Item 3</div>
+    <div style="grid-area: footer; background-color: beige;">Item 4</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prac 9-2</title>
+  <script>
+    function showImage(o) {
+      let img = new Image();
+      img.src = o.value;
+      o.parentElement.appendChild(img);
+    }
+
+    function showImage2(o2) {
+      let img = document.getElementById('img');
+      img.src = o2.value;
+    }
+  </script>
+</head>
+
+<body>
+  <h2>라디오 버튼을 클릭하면 이미지를 출력합니다.</h2>
+  <hr>
+  <input type="radio" name="fruit" value="./images/banana.jpg" onclick="showImage2(this);">바나나</input>
+  <input type="radio" name="fruit" value="./images/mango.jpg" onclick="showImage2(this);">망고</input>
+  <input type="radio" name="fruit" value="./images/apple.jpg" onclick="showImage2(this);">사과</input>
+  <br>
+  <img src="" id='img' alt="this is image area">
+  <hr>
+  <input type="radio" name="fruit" value="./images/banana.jpg" onclick="showImage(this);">바나나</input>
+  <input type="radio" name="fruit" value="./images/mango.jpg" onclick="showImage(this);">망고</input>
+  <input type="radio" name="fruit" value="./images/apple.jpg" onclick="showImage(this);">사과</input>
+</body>
+
+</html>

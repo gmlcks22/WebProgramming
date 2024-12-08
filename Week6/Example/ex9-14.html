@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex 9-14</title>
+  <script>
+    function changeImage() {
+      let sel = document.getElementById("sel");
+      let img = document.getElementById("myImg");
+      img.onload = function () {
+        let mySpan = document.getElementById("mySpan");
+        mySpan.innerHTML = img.width + "x" + img.height;
+      }
+      let index = sel.selectedIndex;
+      img.src = sel.options[index].value;
+    }
+  </script>
+</head>
+
+<body>
+  <h3>onload로 이미지 크지 출력</h3>
+  <hr>
+  <form>
+    <select id="sel" onchange="changeImage()">
+      <option value="apple.jpg">사과</option>
+      <option value="banana.jpg">바나나</option>
+      <option value="mango.jpg">망고</option>
+    </select>
+    <span id="mySpan">이미지 크기</span>
+  </form>
+</body>
+<p>
+  <img id="myImg" src="apple.jpg" alt=".">
+</p>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex 9-9</title>
+  <script>
+    function calc() {
+      let exp = document.getElementById('exp');
+      let value = document.getElementById('result');
+      result.value = eval(exp.value);
+    }
+  </script>
+</head>
+
+<body>
+  <h3>onclick, 계산기 만들기</h3>
+  <hr>
+  <p>
+    계산하고자 하는 수식을 입력하고 계산 버튼을 눌러봐요.
+  </p>
+  <br><br>
+  식:
+  <input type="text" id="exp"><br>
+  값:
+  <input type="text" id="result"> &nbsp;
+  <input type="button" value="계산" onclick="calc();">
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prac 9-10</title>
+  <style>
+    td {
+      text-align: center;
+      width: 80px;
+      height: 10px;
+    }
+
+    button {
+      width: 60px;
+      height: 25px;
+    }
+  </style>
+  <script>
+    let result = 0;
+    function num(value) {
+      //let number = document.getElementById(value);
+      let blank = document.getElementById("blank");
+      if (blank.value == 0) {
+        blank.value = "";
+      }
+      blank.value += value;
+    }
+    function calculate() {
+      let blank = document.getElementById("blank");
+      let equal = document.getElementById("=");
+      result = eval(blank.value);
+      blank.value = result;
+    }
+    function back() {
+      let blank = document.getElementById("blank");
+      blank.value = blank.value.slice(0, -1);
+    }
+    function ce() {
+      let blank = document.getElementById("blank");
+      result = 0;
+      blank.value = result;
+    }
+  </script>
+</head>
+
+<body>
+  <h2>계산기 만들기</h2>
+  <hr>
+  <input type="text" id="blank" value="0">
+  <br>
+  <table>
+    <tr>
+      <td><button id="back" onclick="back()">BACK</button></td>
+      <td><button id="c" onclick="ce()">CE</button></td>
+      <td><button id="c" onclick="ce()">C</button></td>
+      <td><button id="=" onclick="calculate()">=</button></td>
+    </tr>
+    <tr>
+      <td><button id="7" value="7" onclick="num(value)">7</button></td>
+      <td><button id="8" value="8" onclick="num(value)">8</button></td>
+      <td><button id="9" value="9" onclick="num(value)">9</button></td>
+      <td><button value="/" onclick="num(value)">/</button></td>
+    </tr>
+    <tr>
+      <td><button id="4" value="4" onclick="num(value)">4</button></td>
+      <td><button id="5" value="5" onclick="num(value)">5</button></td>
+      <td><button id="6" value="6" onclick="num(value)">6</button></td>
+      <td><button id="*" value="*" onclick="num(value)">*</button></td>
+    </tr>
+    <tr>
+      <td><button id="1" value="1" onclick="num(value)">1</button></td>
+      <td><button id="2" value="2" onclick="num(value)">2</button></td>
+      <td><button id="3" value="3" onclick="num(value)">3</button></td>
+      <td><button id="-" value="-" onclick="num(value)">-</button></td>
+    </tr>
+    <tr>
+      <td><button id="0" value="0" onclick="num(value)">0</button></td>
+      <td><button id="+" value="+" onclick="num(value)">+</button></td>
+      <td><button id="NONE">NONE</button></td>
+      <td><button value="NONE">NONE</button></td>
+    </tr>
+  </table>
+</body>
+
+</html>

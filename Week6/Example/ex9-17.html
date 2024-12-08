@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex 9-17</title>
+  <script>
+    function showCity() {
+      let cities = document.getElementsByName('city');
+      let found = null;
+      for (i = 0; i < cities.length; i++) {
+        if (cities[i].checked == true) {
+          found = cities[i];
+          break;
+        }
+      }
+      if (found != null) {
+        alert(found.value + "is selected....");
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h3>버튼을 클릭하면 ....</h3>
+  <hr>
+  <input type="radio" name="city" value="서울" checked> 서울
+  <input type="radio" name="city" value="부산"> 부산
+  <input type="radio" name="city" value="춘천"> 춘천 &nbsp;
+  <input type="button" value="find checked" onclick="showCity();">
+</body>
+
+</html>

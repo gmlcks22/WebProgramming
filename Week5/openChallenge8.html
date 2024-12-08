@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>open challenge</title>
+  <style>
+    table {
+      background-color: blanchedalmond;
+      border-collapse: collapse;
+      font-size: 60px;
+      color: rgb(8, 8, 122)
+    }
+
+    table th,
+    td {
+      border-top: 1px solid rgb(202, 115, 141);
+      border-bottom: 1px solid rgb(202, 115, 141);
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    #first_num {
+      border-left: 1px solid rgb(202, 115, 141);
+    }
+
+    #third_num {
+      border-right: 1px solid rgb(202, 115, 141);
+    }
+  </style>
+  <script>
+    function gamble(element) {
+      //let num = document.getElementById("num.id");
+      element.textContent = Math.floor(Math.random() * 3);
+      check_win();
+    }
+    function check_win() {
+      let first = document.getElementById("first_num");
+      let second = document.getElementById("second_num");
+      let third = document.getElementById("third_num");
+
+      let obj = document.getElementById("parent");
+      let notify = document.createElement("div");
+      if (first.textContent == second.textContent && second.textContent == third.textContent) {
+        notify.innerHTML = "Success(click here to do again)";
+        obj.appendChild(notify);
+      }
+      notify.addEventListener("click", function(){
+        let p = this.parentElement;
+        p.removeChild(this);
+        first.textContent = 0;
+        second.textContent = 0;
+        third.textContent = 0;
+      })
+    }
+  </script>
+</head>
+
+<body id="parent">
+  <h3>겜블링 게임</h3>
+  <p>각 숫자를 클릭하면 0에서 2사이의 난수로 바뀝니다. 모두 같은 수가 나오면 승리합니다.</p>
+  <hr>
+  <table>
+    <tr>
+      <td id="first_num" onclick="gamble(this)">0</td>
+      <td id="second_num" onclick="gamble(this)">0</td>
+      <td id="third_num" onclick="gamble(this)">0</td>
+    </tr>
+  </table>
+</body>
+
+</html>
