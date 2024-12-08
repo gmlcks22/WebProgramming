@@ -171,11 +171,13 @@ _함수를 작게 나누어서 구성 => 합성하여 함수 구성_
 ---
 
 ## Week 14: Express.js
-[app1.js](./Express/my-first-app/app1.js)  
-[app2.js](./Express/my-first-app/app2.js)  
-[app3.js](./Express/my-first-app/app3.js)  
-[app4.js](./Express/my-first-app/app4.js)  
-[app5.js](./Express/my-first-app/app5.js)  
-[app6.js](./Express/my-first-app/app6.js)  
-[app7.js](./Express/my-first-app/app7.js)  
+예제: 
+
+[웹 서버 만들기: app1.js](./Express/my-first-app/app1.js)  
+[미들웨어로 클라이언트에 응답 보내기: app2.js](./Express/my-first-app/app2.js)  
+[여러 개의 미들웨어 등록&사용, next() 호출: app3.js](./Express/my-first-app/app3.js)  
+[경로별로 실행시킬 함수 지정: app4.js](./Express/my-first-app/app4.js)  
+[응답 데이터 보내기: app5.js](./Express/my-first-app/app5.js)  
+[웹 페이지 경로를 강제로 이동시킴: app6.js](./Express/my-first-app/app6.js)  
+[요청 객체에 추가한 헤더와 파라미터: app7.js](./Express/my-first-app/app7.js)  
 [app8.js](./Express/my-first-app/app8.js)  
