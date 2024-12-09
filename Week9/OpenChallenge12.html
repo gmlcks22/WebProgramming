@@ -42,7 +42,7 @@
         confirmDel = confirm(`${eng.value}를 삭제하시겠습니까?`);
       }
       if (confirmDel) {
-        sessionStorage.removeItem(eng.value);
+        localStorage.removeItem(eng.value);
         alert(`${eng.value}가 삭제되었습니다`);
       }
     }

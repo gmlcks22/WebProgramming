@@ -110,6 +110,7 @@
 ## Week 9: Cookie, Web Storage  
 [`prac12-04.html`](./prac12-04.html)
 [`prac12-04-show.html`](./prac12-04-show.html)  
+OpenChallenge: [OpenChallenge12.html](./Week9/OpenChallenge12.html)  
 - **Cookie**  
 - **Session Storage**  
 - **Local Storage**  

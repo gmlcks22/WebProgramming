@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오디오 리스트 연속 재생</title>
+  <script>
+    let play = document.getElementById("play");
+    let next = document.getElementById("next");
+    function control(e) {
+      let id = e.target.id;
+      if (id == "play") {
+        Audio.play();
+        alert("play");
+      }
+      else {
+        Audio.load();
+      }
+    }
+    function select() {
+      let select = document.getElementById("select");
+      let selected = select.options[select.selectedIndex].value;
+      let audioUi = document.getElementById("audioUi");
+      audioUi.src = selected;
+    }
+  </script>
+</head>
+
+<body>
+  <h2>오디오 리스트 연속 재생</h2>
+  <hr>
+  description...
+  <hr>
+  <audio src="" id="audioUi" controls>Please use latest chrome</audio>
+  <br>
+  <select id="select" size="3">
+    <option value="media/1.mp3" onselect="select()">1</option>
+    <option value="media/2.mp3" onselect="select()">2</option>
+    <option value="media/3.mp3" onselect="select()">3</option>
+  </select>
+  <input type="button" value="play" id="play" onclick="control(event)">
+  <input type="button" value="next" id="next" onclick="control(event)">
+</body>
+
+</html>
